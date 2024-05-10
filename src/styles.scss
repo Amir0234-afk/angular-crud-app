@@ -1,1 +1,128 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --custom-max-width: 1024px;
+  overflow-y: auto;
+}
+
+
+// * {
+//   box-sizing: border-box;
+//   font-family: 'iransans', sans-serif;
+//   -moz-font-feature-settings: "ss02";
+//   -webkit-font-feature-settings: "ss02";
+//   font-feature-settings: "ss02";
+// }
+
+// @font-face {
+//  font-family: 'iransans';
+//  src: url("https://api.jooyanacademy.ir/fonts/iran-sans/IRANSansXV.woff") format("woff"),
+//    /* Pretty Modern Browsers */
+//  url("https://api.jooyanacademy.ir/fonts/iran-sans/IRANSansXV.woff2") format("woff2"),
+//    /* Pretty Modern Browsers */
+//  url("https://api.jooyanacademy.ir/fonts/iran-sans/IRANSansX-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+//  font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'iransans';
+//   src: url("/fonts/iran-sans/IRANSansXV.woff") format("woff"),
+//     /* Pretty Modern Browsers */
+//   url("/fonts/iran-sans/IRANSansXV.woff2") format("woff2"),
+//     /* Pretty Modern Browsers */
+//   url("/fonts/iran-sans/IRANSansX-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+//   font-display: swap;
+// }
+
+// /* google font */
+// @font-face {
+//   font-family: "Material Icons";
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url("/fonts/mat-icons/MatIcon.eot");
+//   src: url("/fonts/mat-icons/MatIcon.woff2?v=1") format("woff2"),
+//   url("/fonts/mat-icons/MatIcon.woff?v=1") format("woff"),
+//   url("/fonts/mat-icons/MatIcon.eot?v=1") format("embedded-opentype"),
+//   url("/fonts/mat-icons/MatIcon.ttf?v=1") format("truetype");
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Material Icons Outlined";
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url("/fonts/mat-icons/MatIconOutlined.eot");
+//   src: url("/fonts/mat-icons/MatIconOutlined.woff2?v=1") format("woff2"),
+//   url("/fonts/mat-icons/MatIconOutlined.woff?v=1") format("woff"),
+//   url("/fonts/mat-icons/MatIconOutlined.eot?v=1") format("embedded-opentype"),
+//   url("/fonts/mat-icons/MatIconOutlined.otf?v=1") format("opentype");
+//   font-display: swap;
+// }
+
+.mat-icon {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-icons-outlined {
+  font-family: "Material Icons Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+// .grecaptcha-badge {
+//   visibility: hidden;
+// }
+
+// #g_a11y_announcement {
+//   position: fixed !important;
+// }
+
+// input:focus {
+//   outline: none;
+// }
+
+// button {
+//   outline: none;
+// }
+
+// button:focus {
+//   outline: none;
+// }
+
+// .dialog .mat-mdc-dialog-surface {
+//   background-color: transparent !important;
+//   box-shadow: none !important;
+// }
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

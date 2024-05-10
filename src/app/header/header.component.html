@@ -1,0 +1,13 @@
+<mat-toolbar color="accent" class="w-full">
+  <div class="flex text-l text-white p-2 text-xl items-center justify-center">
+    <button
+      mat-raised-button
+      color="primary"
+      class="rounded-lg p-2 my-5 mx-3"
+      *ngFor="let item of menuItems; let i = index"
+      [routerLink]="routePaths[i]"
+    >
+      {{ item }}
+    </button>
+  </div>
+</mat-toolbar>

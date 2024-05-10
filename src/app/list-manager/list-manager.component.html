@@ -1,0 +1,46 @@
+<div class="flex flex-col h-[calc(100%-154px)] items-center justify-around">
+  <div class="flex flex-col justify-around items-center w-2/3">
+    <div class="flex justify-around mt-4">
+      <mat-form-field>
+        <input
+          type="text"
+          matInput
+          [formControl]="searchText"
+          placeholder="جست و جو"
+        />
+      </mat-form-field>
+      <button mat-fab color="primary" class="mr-4" (click)="searchHeroes()">
+        <mat-icon>search</mat-icon>
+      </button>
+    </div>
+    <app-lists
+      [herosList]="herosList"
+      [searchQuery]="searchText.value"
+      (delete)="deleteHero($event)"
+      (update)="handleUpdate($event)"
+      class="flex justify-center items-center h-3/4 shadow-2xl"
+    ></app-lists>
+    <!-- Add or Update Hero Section -->
+    <div class="flex justify-center h-auto mt-8 items-center" [formGroup]="heroForm">
+      <mat-form-field>
+        <input 
+          type="text"
+          matInput
+          formControlName="name"
+          placeholder="Hero Name"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          type="text"
+          matInput
+          formControlName="description"
+          placeholder="Hero Description"
+        />
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="addOrUpdateHero()">
+        {{ isUpdateMode ? "تغییر" : "اضافه" }}
+      </button>
+    </div>
+  </div>
+</div>
