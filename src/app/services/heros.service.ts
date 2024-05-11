@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { of, BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { heros } from '../models/heros';
 import { HeroData } from '../models/hero-data';
 
@@ -13,8 +13,6 @@ export class HeroService {
   private heroesSubject: BehaviorSubject<heros[]> = new BehaviorSubject<
     heros[]
   >(this.heroes);
-
-  constructor() {}
 
   getHeroes(): Observable<heros[]> {
     return this.heroesSubject.asObservable();
@@ -42,12 +40,13 @@ export class HeroService {
       this.heroesSubject.next(this.heroes);
     }
   }
+
   searchHeroes(query: string): Observable<heros[]> {
     const filteredHeroes = this.heroes.filter(
       (hero) =>
         hero.name?.toLowerCase().includes(query.toLowerCase()) ||
         hero.description?.toLowerCase().includes(query.toLowerCase())
     );
-    return of(filteredHeroes);
+    return new BehaviorSubject<heros[]>(filteredHeroes).asObservable();
   }
 }

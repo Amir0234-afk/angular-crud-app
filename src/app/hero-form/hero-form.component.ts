@@ -1,6 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-import { heros } from '../models/heros';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-hero-form',
