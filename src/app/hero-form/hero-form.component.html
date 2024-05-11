@@ -1,0 +1,22 @@
+<div class="flex justify-center h-auto mt-8 items-center" [formGroup]="heroForm">
+    <mat-form-field>
+      <input 
+        type="text"
+        matInput
+        formControlName="name"
+        placeholder="Hero Name"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        type="text"
+        matInput
+        formControlName="description"
+        placeholder="Hero Description"
+      />
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="addOrUpdateHero()">
+      {{ isUpdateMode ? "تغییر" : "اضافه" }}
+    </button>
+  </div>
+  

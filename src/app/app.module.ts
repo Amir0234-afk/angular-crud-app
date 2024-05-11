@@ -19,6 +19,7 @@ import { BodyComponent } from './body/body.component';
 import { ContactComponent } from './contact/contact.component';
 import { ListsComponent } from './lists/lists.component';
 import { ListManagerComponent } from './list-manager/list-manager.component';
+import { HeroFormComponent } from './hero-form/hero-form.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { ListManagerComponent } from './list-manager/list-manager.component';
     ContactComponent,
     ListsComponent,
     ListManagerComponent,
+    HeroFormComponent,
   ],
   imports: [
     BrowserModule,

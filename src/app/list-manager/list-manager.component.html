@@ -21,26 +21,10 @@
       class="flex justify-center items-center h-3/4 shadow-2xl"
     ></app-lists>
     <!-- Add or Update Hero Section -->
-    <div class="flex justify-center h-auto mt-8 items-center" [formGroup]="heroForm">
-      <mat-form-field>
-        <input 
-          type="text"
-          matInput
-          formControlName="name"
-          placeholder="Hero Name"
-        />
-      </mat-form-field>
-      <mat-form-field>
-        <input
-          type="text"
-          matInput
-          formControlName="description"
-          placeholder="Hero Description"
-        />
-      </mat-form-field>
-      <button mat-raised-button color="primary" (click)="addOrUpdateHero()">
-        {{ isUpdateMode ? "تغییر" : "اضافه" }}
-      </button>
-    </div>
+    <app-hero-form
+      [heroForm]="heroForm"
+      [isUpdateMode]="isUpdateMode"
+      (submitForm)="addOrUpdateHero()"
+    ></app-hero-form>
   </div>
 </div>
