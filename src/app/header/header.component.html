@@ -1,10 +1,10 @@
 <div class="flex flex-col items-center justify-around">
-  <mat-toolbar color="accent" class="flex justify-center items-center w-full">
-    <div class="text-l text-white p-2 text-xl">
+  <mat-toolbar color="accent" class="flex justify-evenly items-center w-full">
+    <div class="text-md text-white">
       <button
         mat-raised-button
         color="primary"
-        class="rounded-lg p-2 my-5 mx-3"
+        class="rounded-lg mx-2"
         *ngFor="let item of menuItems; let i = index"
         [routerLink]="routePaths[i]"
       >

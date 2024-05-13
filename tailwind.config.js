@@ -4,5 +4,10 @@ module.exports = {
   ],
   theme: {
   },
+  variants: {
+    extend: {
+      display: ['responsive']
+    },
+  },
   plugins: [],
 }
